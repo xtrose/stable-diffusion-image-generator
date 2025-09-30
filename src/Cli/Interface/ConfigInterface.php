@@ -19,61 +19,61 @@ interface ConfigInterface
      *
      * @var string
      */
-    const string ECHO_INIT_CONFIG = 'Initialize configuration';
+    const ECHO_INIT_CONFIG = 'Initialize configuration';
 
     /**
      * Echo dry run is activated
      *
      * @var string
      */
-    const string ECHO_DRY_RUN_IS_ACTIVATED = 'DryRun is activated';
+    const ECHO_DRY_RUN_IS_ACTIVATED = 'DryRun is activated';
 
     /**
      * Success initialize config
      *
      * @var string
      */
-    const string SUCCESS_INIT_CONFIG = 'Successfully initialized configuration';
+    const SUCCESS_INIT_CONFIG = 'Successfully initialized configuration';
 
     /**
      * Error config not found
      *
      * @var string
      */
-    const string ERROR_CONFIG_NOT_FOUND = 'config.php not found';
+    const ERROR_CONFIG_NOT_FOUND = 'config.php not found';
 
     /**
      * Error no host configured
      *
      * @var string
      */
-    const string ERROR_NO_HOST_CONFIGURED = 'No host configured';
+    const ERROR_NO_HOST_CONFIGURED = 'No host configured';
 
     /**
      * Error no width configured
      *
      * @var string
      */
-    const string ERROR_NO_WIDTH_CONFIGURED = 'No width configured';
+    const ERROR_NO_WIDTH_CONFIGURED = 'No width configured';
 
     /**
      * Error no height configured
      *
      * @var string
      */
-    const string ERROR_NO_HEIGHT_CONFIGURED = 'No height configured';
+    const ERROR_NO_HEIGHT_CONFIGURED = 'No height configured';
 
     /**
      * Error no steps configured
      *
      * @var string
      */
-    const string ERROR_NO_STEPS_CONFIGURED = 'No steps configured';
+    const ERROR_NO_STEPS_CONFIGURED = 'No steps configured';
 
     /**
      * Error config not loaded
      *
      * @var string
      */
-    const string ERROR_CONFIG_NOT_LOADED = 'config.php not loaded';
+    const ERROR_CONFIG_NOT_LOADED = 'config.php not loaded';
 }

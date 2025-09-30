@@ -19,82 +19,82 @@ interface AlbumInterface
      *
      * @var string
      */
-    const string ERROR_ADD_SUB_ALBUM = 'Error on adding Sub-Album';
+    const ERROR_ADD_SUB_ALBUM = 'Error on adding Sub-Album';
 
     /**
      * Error add sub album wrong name
      *
      * @var string
      */
-    const string ERROR_ADD_SUB_ALBUM_WRONG_NAME = 'The Sub-Album name may only contain numbers, letters, _ and -';
+    const ERROR_ADD_SUB_ALBUM_WRONG_NAME = 'The Sub-Album name may only contain numbers, letters, _ and -';
 
     /**
      * Error add sub album exists
      *
      * @var string
      */
-    const string ERROR_ADD_SUB_ALBUM_EXISTS = 'The Sub-Album already exists';
+    const ERROR_ADD_SUB_ALBUM_EXISTS = 'The Sub-Album already exists';
 
     /**
      * Success add sub album
      *
      * @var string
      */
-    const string SUCCESS_ADD_SUB_ALBUM = 'Sub-Album added successfully';
+    const SUCCESS_ADD_SUB_ALBUM = 'Sub-Album added successfully';
 
     /**
      * Error delete album
      *
      * @var string
      */
-    const string ERROR_DELETE_ALBUM = 'Error on deleting Album';
+    const ERROR_DELETE_ALBUM = 'Error on deleting Album';
 
     /**
      * Success delete album
      *
      * @var string
      */
-    const string SUCCESS_DELETE_ALBUM = 'Album deleted successfully';
+    const SUCCESS_DELETE_ALBUM = 'Album deleted successfully';
 
     /**
      * Error copy entry
      *
      * @var string
      */
-    const string ERROR_COPY_ENTRY = 'Error on copying Entry';
+    const ERROR_COPY_ENTRY = 'Error on copying Entry';
 
     /**
      * Success copy entry
      *
      * @var string
      */
-    const string SUCCESS_COPY_ENTRY = 'Entry copied successfully';
+    const SUCCESS_COPY_ENTRY = 'Entry copied successfully';
 
     /**
      * Error rename album
      *
      * @var string
      */
-    const string ERROR_RENAME_ALBUM = 'Error on renaming Album';
+    const ERROR_RENAME_ALBUM = 'Error on renaming Album';
 
     /**
      * Error rename album wrong name
      *
      * @var string
      */
-    const string ERROR_RENAME_WRONG_NAME = 'The Album name may only contain numbers, letters, _ and -';
+    const ERROR_RENAME_WRONG_NAME = 'The Album name may only contain numbers, letters, _ and -';
 
     /**
      * Error rename album exists
      *
      * @var string
      */
-    const string ERROR_RENAME_ALBUM_EXISTS = 'The Album already exists';
+    const ERROR_RENAME_ALBUM_EXISTS = 'The Album already exists';
 
     /**
      * Success rename album
      *
      * @var string
      */
-    const string SUCCESS_RENAME_ALBUM = 'Album renamed successfully';
+    const SUCCESS_RENAME_ALBUM = 'Album renamed successfully';
 }

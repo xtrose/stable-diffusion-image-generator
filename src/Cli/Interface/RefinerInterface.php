@@ -19,12 +19,12 @@ interface RefinerInterface
      *
      * @var string
      */
-    const string ERROR_NO_CHECKPOINTS_FOUND = 'No checkpoints found';
+    const ERROR_NO_CHECKPOINTS_FOUND = 'No checkpoints found';
 
     /**
      * Error refiner checkpoint not found
      *
      * @var string
      */
-    const string ERROR_REFINER_CHECKPOINT_NOT_FOUND = 'Refiner checkpoint not found "%1$s"';
+    const ERROR_REFINER_CHECKPOINT_NOT_FOUND = 'Refiner checkpoint not found "%1$s"';
 }

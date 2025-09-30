@@ -19,47 +19,47 @@ interface PromptInterface
      *
      * @var string
      */
-    const string ECHO_START = 'Start loading prompt data';
+    const ECHO_START = 'Start loading prompt data';
 
     /**
      * Echo end
      *
      * @var string
      */
-    const string ECHO_END = 'Prompt data successfully loaded';
+    const ECHO_END = 'Prompt data successfully loaded';
 
     /**
      * Error no prompt directory found
      *
      * @var string
      */
-    const string ERROR_NO_PROMPT_DIRECTORY_FOUND = 'No prompt directory found';
+    const ERROR_NO_PROMPT_DIRECTORY_FOUND = 'No prompt directory found';
 
     /**
      * Error no prompt subdirectories found
      *
      * @var string
      */
-    const string ERROR_NO_PROMPT_SUBDIRECTORIES_FOUND = 'No prompt subdirectories in prompt directory found';
+    const ERROR_NO_PROMPT_SUBDIRECTORIES_FOUND = 'No prompt subdirectories in prompt directory found';
 
     /**
      * Error no prompt data found
      *
      * @var string
      */
-    const string ERROR_NO_PROMPT_DATA_FOUND = 'No prompt data found';
+    const ERROR_NO_PROMPT_DATA_FOUND = 'No prompt data found';
 
     /**
      * Error configured prompt not found
      *
      * @var string
      */
-    const string ERROR_CONFIGURED_PROMPT_NOT_FOUND = 'Configured prompt not found';
+    const ERROR_CONFIGURED_PROMPT_NOT_FOUND = 'Configured prompt not found';
 
     /**
      * Error configured negative prompt not found
      *
      * @var string
      */
-    const string ERROR_CONFIGURED_NEGATIVE_PROMPT_NOT_FOUND = 'Configured negative prompt not found';
+    const ERROR_CONFIGURED_NEGATIVE_PROMPT_NOT_FOUND = 'Configured negative prompt not found';
 }

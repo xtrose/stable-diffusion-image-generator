@@ -19,26 +19,26 @@ interface LoraInterface
      *
      * @var string
      */
-    const string ECHO_INIT_LORAS = 'Initialize loras';
+    const ECHO_INIT_LORAS = 'Initialize loras';
 
     /**
      * Success init loras
      *
      * @var string
      */
-    const string SUCCESS_INIT_LORAS = 'Successfully initialized loras and saved to file "loras.json"';
+    const SUCCESS_INIT_LORAS = 'Successfully initialized loras and saved to file "loras.json"';
 
     /**
      * Error no loras found
      *
      * @var string
      */
-    const string ERROR_NO_LORAS_FOUND = 'No loras found';
+    const ERROR_NO_LORAS_FOUND = 'No loras found';
 
     /**
      * Error lora not found
      *
      * @var string
      */
-    const string ERROR_LORA_NOT_FOUND = 'Lora not found "%1$s"';
+    const ERROR_LORA_NOT_FOUND = 'Lora not found "%1$s"';
 }

@@ -19,47 +19,47 @@ interface GeneratorInterface
      *
      * @var string
      */
-    const string ERROR_ON_LOAD_CONFIG = 'Error on configuration. Check your config.app.php, config.local.php and config.inc.php files and configure an reachable Stable Diffusion host.';
+    const ERROR_ON_LOAD_CONFIG = 'Error on configuration. Check your config.app.php, config.local.php and config.inc.php files and configure an reachable Stable Diffusion host.';
 
     /**
      * Error on load checkpoints
      *
      * @var string
      */
-    const string ERROR_ON_LOAD_CHECKPOINTS = 'Error on load checkpoints. Stable Diffusion host ist not reachable. Check your config.app.php file and configure an reachable Stable Diffusion host.';
+    const ERROR_ON_LOAD_CHECKPOINTS = 'Error on load checkpoints. Stable Diffusion host ist not reachable. Check your config.app.php file and configure an reachable Stable Diffusion host.';
 
     /**
      * Error on load Samplers
      *
      * @var string
      */
-    const string ERROR_ON_LOAD_SAMPLERS = 'Error on load samplers. Stable Diffusion host ist not reachable. Check your config.app.php file and configure an reachable Stable Diffusion host.';
+    const ERROR_ON_LOAD_SAMPLERS = 'Error on load samplers. Stable Diffusion host ist not reachable. Check your config.app.php file and configure an reachable Stable Diffusion host.';
 
     /**
      * Error on load prompts
      *
      * @var string
      */
-    const string ERROR_ON_LOAD_PROMPTS = 'No Prompt Merger Directories available. Use Prompt Merger to create your prompt generator.';
+    const ERROR_ON_LOAD_PROMPTS = 'No Prompt Merger Directories available. Use Prompt Merger to create your prompt generator.';
 
     /**
      * Success save config.app.php
      *
      * @var string
      */
-    const string SUCCESS_SAVE_CONFIG_APP_PHP = 'The config.app.php has been saved successfully';
+    const SUCCESS_SAVE_CONFIG_APP_PHP = 'The config.app.php has been saved successfully';
 
     /**
      * Error host not configured
      *
      * @var string
      */
-    const string ERROR_HOST_NOT_CONFIGURED = 'The Stable Diffusion host is not configured. Check your settings and setup host.';
+    const ERROR_HOST_NOT_CONFIGURED = 'The Stable Diffusion host is not configured. Check your settings and setup host.';
 
     /**
      * Error host not reachable
      *
      * @var string
      */
-    const string ERROR_HOST_NOT_REACHABLE = 'The Stable Diffusion host "%1$s" is not reachable. Check your settings and setup host.';
+    const ERROR_HOST_NOT_REACHABLE = 'The Stable Diffusion host "%1$s" is not reachable. Check your settings and setup host.';
 }

@@ -19,12 +19,12 @@ interface OptionInterface
      *
      * @var string
      */
-    const string ECHO_INIT_OPTIONS = 'Initialize options';
+    const ECHO_INIT_OPTIONS = 'Initialize options';
 
     /**
      * Success initialized options
      *
      * @var string
      */
-    const string SUCCESS_INIT_OPTIONS = 'Successfully initialized options and saved to file "options.json"';
+    const SUCCESS_INIT_OPTIONS = 'Successfully initialized options and saved to file "options.json"';
 }
