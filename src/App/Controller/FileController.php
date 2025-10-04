@@ -128,7 +128,7 @@ class FileController implements FileInterface
             if (!$toolsController->containsDataFiles(self::$fileData['txt2img'][$key])) {
                 continue;
             }
-            $time = strtotime($key);
+            $time = strtotime(str_replace('-', ' ', $key));
             if ($time > $newest) {
                 $targetType = 'txt2img';
                 $targetKey = $key;
@@ -139,7 +139,7 @@ class FileController implements FileInterface
             if (!$toolsController->containsDataFiles(self::$fileData['img2img'][$key])) {
                 continue;
             }
-            $time = strtotime($key);
+            $time = strtotime(str_replace('-', ' ', $key));
             if ($time > $newest) {
                 $targetType = 'img2img';
                 $targetKey = $key;
@@ -150,7 +150,7 @@ class FileController implements FileInterface
             if (!$toolsController->containsDataFiles(self::$fileData['loop'][$key])) {
                 continue;
             }
-            $time = strtotime($key);
+            $time = strtotime(str_replace('-', ' ', $key));
             if ($time > $newest) {
                 $targetType = 'loop';
                 $targetKey = $key;
@@ -277,16 +277,22 @@ class FileController implements FileInterface
      */
     public function getCheckpoints(): array
     {
+        $mergedCheckpoints = [];
         $checkpoints = $this->getUsedCheckpoints();
-        $usedRefinedCheckpoints = $this->getUsedRefinerCheckpoints();
-        foreach ($usedRefinedCheckpoints as $usedRefinedCheckpoint) {
-            if (!in_array($usedRefinedCheckpoint, $checkpoints)) {
-                $checkpoints[] = $usedRefinedCheckpoint;
+        foreach ($checkpoints as $checkpoint) {
+            if (!in_array($checkpoint, $mergedCheckpoints)) {
+                $mergedCheckpoints[] = $checkpoint;
             }
         }
-        sort($checkpoints);
+        $usedRefinedCheckpoints = $this->getUsedRefinerCheckpoints();
+        foreach ($usedRefinedCheckpoints as $usedRefinedCheckpoint) {
+            if (!in_array($usedRefinedCheckpoint, $mergedCheckpoints)) {
+                $mergedCheckpoints[] = $usedRefinedCheckpoint;
+            }
+        }
+        usort($mergedCheckpoints, 'strnatcasecmp');
 
-        return $checkpoints;
+        return $mergedCheckpoints;
     }
 
     /**
@@ -306,7 +312,7 @@ class FileController implements FileInterface
             $checkpoints =
                 array_merge($checkpoints, $toolsController->collectCheckpointsFromDataFiles($dataFile));
         }
-        sort($checkpoints);
+        usort($checkpoints, 'strnatcasecmp');
 
         return $checkpoints;
     }
@@ -327,7 +333,7 @@ class FileController implements FileInterface
             $checkpoints =
                 array_merge($checkpoints, $toolsController->collectRefinerCheckpointsFromDataFiles($dataFile));
         }
-        sort($checkpoints);
+        usort($checkpoints, 'strnatcasecmp');
 
         return $checkpoints;
     }
